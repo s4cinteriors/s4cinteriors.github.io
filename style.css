@@ -120,3 +120,27 @@ footer{
     margin-bottom:30px;
     box-shadow:0 8px 25px rgba(0,0,0,0.4);
 }
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.card{
+    background:#222;
+    color:#fff;
+    padding:25px;
+    border-radius:10px;
+    border-left:5px solid #d4af37;
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.card:hover{
+    background:#d4af37;
+    color:#000;
+    transform:translateY(-5px);
+}
