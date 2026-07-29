@@ -112,3 +112,11 @@ footer{
     border-left:4px solid gold;
     border-radius:8px;
 }
+.hero-banner{
+    width:100%;
+    max-height:500px;
+    object-fit:cover;
+    border-radius:15px;
+    margin-bottom:30px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.4);
+}
