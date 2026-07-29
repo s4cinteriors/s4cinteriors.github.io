@@ -144,3 +144,12 @@ footer{
     color:#000;
     transform:translateY(-5px);
 }
+#why-us,
+#reviews{
+    margin-top:60px;
+}
+
+#reviews .card{
+    margin-bottom:20px;
+    line-height:1.8;
+    }
