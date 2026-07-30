@@ -17,7 +17,25 @@ function toggleMenu() {
 }
 let slideIndex = 0;
 showSlides();
+const counters = document.querySelectorAll(".counter");
 
+counters.forEach(counter => {
+    const updateCounter = () => {
+        const target = +counter.getAttribute("data-target");
+        const count = +counter.innerText;
+
+        const increment = Math.ceil(target / 100);
+
+        if (count < target) {
+            counter.innerText = count + increment;
+            setTimeout(updateCounter, 30);
+        } else {
+            counter.innerText = target + "+";
+        }
+    };
+
+    updateCounter();
+});
 function showSlides(){
 
 let slides = document.getElementsByClassName("slides");
