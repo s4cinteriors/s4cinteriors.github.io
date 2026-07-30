@@ -3,7 +3,7 @@
 console.log("Welcome to S4C Interiors!");
 
 document.addEventListener("DOMContentLoaded", function () {
-    const hero = document.querySelector(".hero");
+    const hero = document.querySelector(".hero-slider");
 
     hero.style.opacity = "0";
 
