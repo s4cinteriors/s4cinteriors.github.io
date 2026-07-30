@@ -12,3 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
         hero.style.opacity = "1";
     }, 300);
 });
+function toggleMenu() {
+    document.querySelector(".navbar").classList.toggle("active");
+}
