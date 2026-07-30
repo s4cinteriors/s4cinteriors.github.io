@@ -318,3 +318,30 @@ animation:fade 1s;
 from{opacity:.4;}
 to{opacity:1;}
     }
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:20px;
+padding:40px 20px;
+background:#111;
+text-align:center;
+}
+
+.stat-box{
+background:#1b1b1b;
+padding:25px;
+border-radius:12px;
+box-shadow:0 0 10px rgba(212,175,55,.25);
+}
+
+.stat-box h2{
+color:#d4af37;
+font-size:38px;
+margin:0;
+}
+
+.stat-box p{
+color:#fff;
+margin-top:10px;
+font-size:16px;
+}
