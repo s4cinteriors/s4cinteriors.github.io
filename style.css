@@ -284,5 +284,13 @@ footer{
 
 .contact-form button{
     width:100%;
+    padding:15px;
+    background:#d4af37;
+    color:#000;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    font-weight:bold;
     cursor:pointer;
+    margin-top:10px;
 }
