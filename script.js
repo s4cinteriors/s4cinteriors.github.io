@@ -55,3 +55,8 @@ slides[slideIndex-1].style.display="block";
 setTimeout(showSlides,3000);
 
 }
+window.addEventListener("load", function () {
+    setTimeout(function () {
+        document.getElementById("loader").classList.add("loader-hide");
+    }, 1800);
+});
