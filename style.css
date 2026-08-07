@@ -576,3 +576,41 @@ visibility:hidden;
 .call-float:hover{
     transform:scale(1.1);
 }
+/* Bottom Action Bar */
+.bottom-bar{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    display:flex;
+    z-index:9999;
+}
+
+.bottom-bar a{
+    flex:1;
+    padding:15px;
+    text-align:center;
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.call-btn{
+    background:#007bff;
+}
+
+.wa-btn{
+    background:#25D366;
+}
+
+.quote-btn{
+    background:#d4af37;
+    color:#000 !important;
+}
+
+/* Hide on Desktop */
+@media (min-width:768px){
+    .bottom-bar{
+        display:none;
+    }
+}
