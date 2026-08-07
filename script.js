@@ -68,9 +68,3 @@ form.addEventListener("submit", function () {
         form.reset();
     }, 1000);
 });
-});
-window.addEventListener("load", function () {
-    setTimeout(function () {
-        document.getElementById("loader").classList.add("loader-hide");
-    }, 1800);
-});
