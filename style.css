@@ -553,3 +553,26 @@ visibility:hidden;
     color:#ddd;
     line-height:1.7;
 }
+/* Floating Call Button */
+.call-float{
+    position:fixed;
+    right:20px;
+    bottom:90px; /* WhatsApp button-க்கு மேலே */
+    width:60px;
+    height:60px;
+    background:#007bff;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:28px;
+    box-shadow:0 4px 15px rgba(0,0,0,.3);
+    z-index:9999;
+    transition:.3s;
+}
+
+.call-float:hover{
+    transform:scale(1.1);
+}
