@@ -59,4 +59,18 @@ window.addEventListener("load", function () {
     setTimeout(function () {
         document.getElementById("loader").classList.add("loader-hide");
     }, 1800);
+    const form = document.querySelector(".contact-form");
+const successMsg = document.getElementById("successMsg");
+
+form.addEventListener("submit", function () {
+    setTimeout(function () {
+        successMsg.style.display = "block";
+        form.reset();
+    }, 1000);
+});
+});
+window.addEventListener("load", function () {
+    setTimeout(function () {
+        document.getElementById("loader").classList.add("loader-hide");
+    }, 1800);
 });
