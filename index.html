@@ -223,16 +223,34 @@
 
     <form action="https://formsubmit.co/info@s4cinteriors.com" method="POST" class="contact-form">
 
-        <input type="text" name="Your Name" required>
+        <label for="name">Name</label>
+<input type="text" id="name" name="Your Name"
+placeholder="Enter your name" required>
 
-        <input type="tel" name="Mobile Number" required>
+<label for="phone">Phone Number</label>
+<input type="tel" id="phone" name="Mobile Number"
+placeholder="Enter your mobile number" required>
 
-        <input type="email" name="Email Address">
-<textarea
-  name="Message"
-  placeholder="Tell us about your project"
-  required>
-</textarea>
+<label for="email">Email Address</label>
+<input type="email" id="email" name="Email Address"
+placeholder="Enter your email">
+
+<label for="project">Project Type</label>
+<select id="project" name="Project Type" required>
+    <option value="">Select Project Type</option>
+    <option>Modular Kitchen</option>
+    <option>Bedroom Interior</option>
+    <option>Living Room</option>
+    <option>Wardrobe</option>
+    <option>Office Interior</option>
+    <option>Full Home Interior</option>
+</select>
+
+<label for="message">Project Details</label>
+<textarea id="message"
+name="Message"
+placeholder="Tell us about your project"
+required></textarea>
 
         <button type="submit" class="btn">Get Free Quote</button>
 <input type="hidden" name="_subject" value="New Quote Request from S4C Interiors Website">
