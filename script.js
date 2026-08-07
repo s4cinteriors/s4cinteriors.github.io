@@ -60,3 +60,29 @@ window.addEventListener("load", function () {
         document.getElementById("loader").classList.add("loader-hide");
  }, 1800);
 });
+const form = document.getElementById("quoteForm");
+const successMsg = document.getElementById("successMsg");
+
+if (form) {
+    form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+
+        const response = await fetch(form.action, {
+            method: "POST",
+            body: formData
+        });
+
+        if (response.ok) {
+            successMsg.style.display = "block";
+            form.reset();
+
+            setTimeout(() => {
+                successMsg.style.display = "none";
+            }, 5000);
+        } else {
+            alert("Failed to send enquiry. Please try again.");
+        }
+    });
+}
