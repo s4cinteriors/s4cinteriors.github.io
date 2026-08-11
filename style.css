@@ -732,3 +732,31 @@ visibility:hidden;
         text-align:center;
     }
 }
+/* Desktop - Why Choose Section Fix */
+@media (min-width: 769px){
+
+    .why-choose .container{
+        max-width:1200px;
+        margin:auto;
+    }
+
+    .features{
+        display:grid;
+        grid-template-columns:repeat(3, 1fr);
+        gap:25px;
+    }
+
+    .why-choose h2{
+        text-align:center;
+    }
+
+    .why-choose .subtitle{
+        text-align:center;
+        margin-bottom:40px;
+    }
+
+    .feature-box{
+        width:auto;
+        text-align:center;
+    }
+}
